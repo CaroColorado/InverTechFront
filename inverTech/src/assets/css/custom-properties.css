@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  /* Font Sizes */
+  --font-size-sm: 1rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.9rem;
+  --font-size-ulg: 2.1rem;
+  --font-size-xl: 2.6rem;
+  --font-size-xxl: 2.3rem;
+  --font-size-xxxl: 3.8rem;
+
+  /* Custom properties */
+  --color-primary: #181818;
+  --color-secondary: #f0f0f0;
+  --background-page: linear-gradient(rgb(128, 161, 212), rgb(192, 185, 221), rgb(222, 217, 226), rgb(247, 244, 234));
+  --radius-button: 4px;
+
+  /* Typographies */
+  --main-typo: 'Montserrat', sans-serif;
+
+  /*----width----*/
+
+  /*----height----*/
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+
+/** Estandar para responsive
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+  */
+
+  button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 3px;
+    border-radius: var(--radius-button);
+    border: none;
+    background-color:rgb(128, 161, 212);
+  }
+
+  button:active {
+    background-color: white;
+  }
+  
+  
