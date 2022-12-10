@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MultipleChioceComponent } from './multiple-chioce/multiple-chioce.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MultipleChioceComponent
   ],
   imports: [
     BrowserModule,
