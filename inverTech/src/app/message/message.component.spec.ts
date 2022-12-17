@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MessageComponent } from './message.component';
+import { MultipleChioceComponent } from '../multiple-chioce/multiple-chioce.component';
 
 describe('MessageComponent', () => {
   let component: MessageComponent;
