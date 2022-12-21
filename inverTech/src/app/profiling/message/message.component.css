@@ -23,3 +23,9 @@ button:active {
 button:focus{
     background-color: #71C5E8;
 }
+
+img{
+    width: 150px;
+    margin: 10px;
+    margin-bottom: 15;
+}
