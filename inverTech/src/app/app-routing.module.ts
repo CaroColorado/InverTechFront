@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { MessageComponent } from './message/message.component';
-import { MultipleChioceComponent } from './multiple-chioce/multiple-chioce.component';
+import { RouterModule, Routes } from '@angular/router'; //todo enrutamiento debe importar RouterModule y Routes
+import { ProfilingComponent } from './profiling/profiling.component';
 
 const routes: Routes = [
-  {
-    path: 'message',
-    component: MessageComponent
-  },
-  {
-    path: 'multiple',
-    component: MultipleChioceComponent
-  }
+  //aqui se indican las rutas
+  { path: '', redirectTo: 'profiling', pathMatch: 'full'},
+  { path: 'profiling', component: ProfilingComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button{
+    color: #FFFFFF;
+    background-color: #0033A0;
+    padding: 10px;
+    width: 200px;
+    border: 3px solid #727a85;
+    border-radius: 10px;
+    margin: 1.5px;
+}
+
+
+button:active {
+    background-color: #71C5E8;
+}
+
+button:focus{
+    background-color: #71C5E8;
+}

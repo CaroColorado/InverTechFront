@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MultipleChioceComponent } from './multiple-chioce.component';
+import { ProfilingComponent } from './profiling.component';
 
-describe('MultipleChioceComponent', () => {
-  let component: MultipleChioceComponent;
-  let fixture: ComponentFixture<MultipleChioceComponent>;
+describe('ProfilingComponent', () => {
+  let component: ProfilingComponent;
+  let fixture: ComponentFixture<ProfilingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MultipleChioceComponent ]
+      declarations: [ ProfilingComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MultipleChioceComponent);
+    fixture = TestBed.createComponent(ProfilingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,9 +9,5 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'inverTech';
   
-  constructor(private router: Router){}
 
-  goTomultiple(){
-    this.router.navigate(['/', 'message']);
-  }
 }
