@@ -1,0 +1,57 @@
+:root {
+    --main-yellow-color: #E3E829;
+    --blue-color: #0033A0;
+}
+
+.main-section {
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+details {
+    width: 99%;
+    margin: 0 auto;    
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #00AEC7;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+div h3 {
+    color: #00AEC7;
+}
+
+div p {
+    color: #00AEC7;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-icon {
+    width: 85px;
+    /*background-color: salmon;*/
+}
+
+img {
+    width: 85px;
+    border-radius: 10px;
+}
+
+.flex-text {
+    width: 60%;
+    margin-left: 1rem;
+    /*background-color: aqua;*/
+
+}
+
