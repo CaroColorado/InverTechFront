@@ -4,7 +4,6 @@ import { ProfilingComponent } from './profiling/profiling.component';
 
 const routes: Routes = [
   //aqui se indican las rutas
-  { path: '', redirectTo: 'profiling', pathMatch: 'full'},
   { path: 'profiling', component: ProfilingComponent}
 ];
 
