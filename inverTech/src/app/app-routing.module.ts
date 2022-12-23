@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LearningPathComponent } from './LearningPath/learning-path.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'learning', pathMatch:'full'},
   {path: 'learning', component: LearningPathComponent }
 ];
 
