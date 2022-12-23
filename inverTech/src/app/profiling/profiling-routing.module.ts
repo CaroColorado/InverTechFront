@@ -11,7 +11,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MessageComponent,
+    ProfilingComponent
+  ],
   imports: [
     RouterModule.forRoot(routes),
     CommonModule
