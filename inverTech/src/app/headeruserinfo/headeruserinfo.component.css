@@ -1,0 +1,35 @@
+.header-section {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.header-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-img {
+    width: 70px;
+}
+
+.img-container {
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.text-container {
+    margin: 1rem auto;
+    line-height: 2rem;
+}
+
+.text-container h3 {
+    text-align: center;
+}
+
+.text-container p {
+    text-align: center;
+}
+
+

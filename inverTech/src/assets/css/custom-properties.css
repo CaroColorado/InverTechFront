@@ -13,6 +13,11 @@
   --bar-color: #E3E829;
     --fill-size: 0%;
 
+  /*Brand colors*/
+  --main-yellow-color: #E3E829;
+  --blue-color: #0033A0;
+  --aqua-color: #00AEC7;
+
   /* Custom properties */
   --color-primary: #fffffe;
   --color-secondary: #16204a;

@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderuserinfoComponent } from './headeruserinfo/headeruserinfo.component';
+import { MainuserinfoComponent } from './mainuserinfo/mainuserinfo.component';
 
 import { MessageComponent } from './profiling/message/message.component';
 import { ProfilingComponent } from './profiling/profiling.component';
@@ -18,7 +20,10 @@ import { LearningsectionComponent } from './LearningPath/learningsection/learnin
     MessageComponent,
     LearningPathComponent,
     LearningheaderComponent,
-    LearningsectionComponent
+    LearningsectionComponent,
+    HeaderuserinfoComponent,
+    MainuserinfoComponent
+
   ],
   imports: [
     BrowserModule,
