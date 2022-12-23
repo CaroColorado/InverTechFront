@@ -11,6 +11,7 @@ import { ProfilingComponent } from './profiling/profiling.component';
 import { LearningPathComponent } from './LearningPath/learning-path.component';
 import { LearningheaderComponent } from './LearningPath/learningheader/learningheader.component';
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LearningsectionComponent } from './LearningPath/learningsection/learnin
     LearningheaderComponent,
     LearningsectionComponent,
     HeaderuserinfoComponent,
-    MainuserinfoComponent
+    MainuserinfoComponent,
+    UserInfoComponent
 
   ],
   imports: [

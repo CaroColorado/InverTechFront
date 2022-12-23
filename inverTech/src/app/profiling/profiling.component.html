@@ -9,10 +9,10 @@
         <button (click)="anterior()"> Atras </button>
     </div>
     <div *ngIf="messageParent == 7">
-        <button id="btnEmpieza">Empieza</button>
+        <button id="btnEmpieza" [routerLink]="['/learning']">Empieza</button>
     </div>
     <div *ngIf="messageParent < 7">
-        <button (click)="siguiente()"> Siguiente </button>
+        <button (click)="siguiente()" > Siguiente </button>
     </div>
 </div>
 
