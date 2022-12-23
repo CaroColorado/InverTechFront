@@ -34,12 +34,13 @@ div p {
 }
 
 .flex-icon {
-    width: 85px;
+    width: 100px;
+    margin-left: 1rem;
     /*background-color: salmon;*/
 }
 
 img {
-    width: 85px;
+    width: 100px;
     border-radius: 10px;
 }
 
@@ -47,6 +48,34 @@ img {
     width: 60%;
     margin-left: 1rem;
     /*background-color: aqua;*/
-
 }
+
+#text-marcadores, #text-alertas, #text-certificados {
+    margin-left: 1rem;
+}
+
+summary:hover {
+    background-color: #0033A0;
+}
+
+progress {
+    background-color: white;
+  }
+  
+  ::-webkit-progress-bar {
+     background-color: #ECF0E9;
+     border-radius: 10px;
+  }
+
+  ::-webkit-progress-value {
+    background-color: #45F036;
+    border-radius: 10px;
+ }
+ 
+ ::-moz-progress-bar {
+    background-color: #45F036;
+    border-radius: 10px;
+ }
+
+ 
 
