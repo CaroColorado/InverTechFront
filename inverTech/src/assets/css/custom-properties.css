@@ -10,6 +10,11 @@
   --font-size-xxl: 2.3rem;
   --font-size-xxxl: 3.8rem;
 
+  /*Brand colors*/
+  --main-yellow-color: #E3E829;
+  --blue-color: #0033A0;
+  --aqua-color: #00AEC7;
+
   /* Custom properties */
   --color-primary: #181818;
   --color-secondary: #f0f0f0;

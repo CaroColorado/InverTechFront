@@ -1,8 +1,3 @@
-:root {
-    --main-yellow-color: #E3E829;
-    --blue-color: #0033A0;
-}
-
 .main-section {
     font-family: sans-serif;
     background-color: #FFFFFF;
@@ -26,11 +21,11 @@ summary {
 }
 
 div h3 {
-    color: #00AEC7;
+    color: black;
 }
 
 div p {
-    color: #00AEC7;
+    color: black;
 }
 
 .flex-container {
