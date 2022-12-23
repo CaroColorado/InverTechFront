@@ -9,6 +9,9 @@
   --font-size-xl: 2.6rem;
   --font-size-xxl: 2.3rem;
   --font-size-xxxl: 3.8rem;
+  /*----learning path----*/
+  --bar-color: #E3E829;
+    --fill-size: 0%;
 
   /* Custom properties */
   --color-primary: #fffffe;
