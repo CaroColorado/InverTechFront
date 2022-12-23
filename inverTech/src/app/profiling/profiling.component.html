@@ -1,0 +1,23 @@
+<section>
+    <div class="rangoPadre">
+        <div class="rangoHijo" id="rango" [style.width.px]="tamanoRange"></div>
+    </div>
+    <app-message [messageChild]="messageParent"></app-message>
+</section>
+<div>
+    <div *ngIf="messageParent > 0">
+        <button (click)="anterior()"> Atras </button>
+    </div>
+    <div *ngIf="messageParent == 7">
+        <button id="btnEmpieza">Empieza</button>
+    </div>
+    <div *ngIf="messageParent < 7">
+        <button (click)="siguiente()"> Siguiente </button>
+    </div>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>

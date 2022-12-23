@@ -6,11 +6,24 @@ import { AppComponent } from './app.component';
 import { HeaderuserinfoComponent } from './headeruserinfo/headeruserinfo.component';
 import { MainuserinfoComponent } from './mainuserinfo/mainuserinfo.component';
 
+import { MessageComponent } from './profiling/message/message.component';
+import { ProfilingComponent } from './profiling/profiling.component';
+import { LearningPathComponent } from './LearningPath/learning-path.component';
+import { LearningheaderComponent } from './LearningPath/learningheader/learningheader.component';
+import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
+
 @NgModule({
   declarations: [
+    //Aqui se deben declarar TODOs lo componentes que se van a usar, a menos de que sean hijos de otros componentes y no se deban mostrar aca
     AppComponent,
+    ProfilingComponent,
+    MessageComponent,
+    LearningPathComponent,
+    LearningheaderComponent,
+    LearningsectionComponent,
     HeaderuserinfoComponent,
     MainuserinfoComponent
+
   ],
   imports: [
     BrowserModule,
