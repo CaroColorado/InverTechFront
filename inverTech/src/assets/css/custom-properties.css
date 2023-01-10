@@ -9,10 +9,14 @@
   --font-size-xl: 2.6rem;
   --font-size-xxl: 2.3rem;
   --font-size-xxxl: 3.8rem;
+  /*----learning path----*/
+  --bar-color: #E3E829;
+    --fill-size: 0%;
 
   /* Custom properties */
-  --color-primary: #181818;
-  --color-secondary: #f0f0f0;
+  --color-primary: #fffffe;
+  --color-secondary: #16204a;
+  --color-tertiary: #61bb4a;
   --background-page: linear-gradient(rgb(128, 161, 212), rgb(192, 185, 221), rgb(222, 217, 226), rgb(247, 244, 234));
   --radius-button: 4px;
 
