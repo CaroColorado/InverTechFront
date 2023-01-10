@@ -51,9 +51,6 @@
     cursor: pointer;
     margin: 5px;
     padding: 3px;
-    border-radius: var(--radius-button);
-    border: none;
-    background-color:rgb(128, 161, 212);
   }
 
   button:active {
