@@ -5,6 +5,8 @@ import { ProfilingComponent } from './profiling/profiling.component';
 import { LearningPathComponent } from './LearningPath/learning-path.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { MainPageComponent } from './mainPage/main-page.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
   //aqui se indican las rutas
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path: 'mainpage', component: MainPageComponent},
   { path: 'profiling', component: ProfilingComponent},
   { path: 'learning', component: LearningPathComponent },
-  { path: 'userinfo', component: UserInfoComponent}
+  { path: 'userinfo', component: UserInfoComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({

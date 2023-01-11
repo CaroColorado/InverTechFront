@@ -13,6 +13,8 @@ import { LearningheaderComponent } from './LearningPath/learningheader/learningh
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { MainPageComponent } from './mainPage/main-page.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MainPageComponent } from './mainPage/main-page.component';
     HeaderuserinfoComponent,
     MainuserinfoComponent,
     UserInfoComponent,
-    MainPageComponent
+    MainPageComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [
