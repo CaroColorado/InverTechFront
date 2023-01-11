@@ -1,13 +1,12 @@
-
 <section>
 
     <div class="contenedor-acordeon">
-    
+
         <div class="acordeon">
             <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
             <label for="btn-acordeon1">
                 Tasas fijas de hasta 16.00%
-                CDT 
+                CDT
             </label>
             <div class="contenido-acordeon">
                 <h2 class="CDT">Beneficios de la inversion en CDT</h2>
@@ -16,19 +15,41 @@
                 <p class="info"> Tasas atractivas para plazos de 3 a 24 meses</p>
 
                 <h3>Simula tu CDT y descubre cuánto puedes ganar</h3>
-	            <input type="number" name="monto" id="monto" placeholder="$ Ingresar monto"/>
+                <input type="number" name="monto" id="monto" placeholder="$ Ingresar monto" />
 
-                <p class="explicacion">¡El CDT te da más que tu cuenta de ahorros! Con unas super tasas generas rendimientos positivos desde el primer día!</p>
-                
+                <p class="explicacion">¡El CDT te da más que tu cuenta de ahorros! Con unas super tasas generas
+                    rendimientos positivos desde el primer día!</p>
+
                 <h5> Selecciona un plazo y conoce la proyección de tu CDT</h5>
-                <div class="sidebar">
-                    <ul>
-                        <li class="tasas"><p href="#">$128.748 </p><p class="meses">Plazo 24 meses</p></li>
-                        <li class="tasas"><p href="#">$122.313 </p><p class="meses">Plazo 18 meses</p></li>
-                        <li class="tasas"><p href="#">$115.360 </p><p class="meses">Plazo 12 meses</p></li>
-                        <li class="tasas"><p href="#">$110.748 </p><p class="meses">Plazo 9 meses</p></li>
-                    </ul>
-                   </div>
+                <div class="plazo">
+                    <div class="sidebar">
+                        <ul>
+                            <li class="tasas">
+                                <p href="#">$128.748 </p>
+                                <p class="meses">Plazo 24 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$122.313 </p>
+                                <p class="meses">Plazo 18 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$115.360 </p>
+                                <p class="meses">Plazo 12 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$110.748 </p>
+                                <p class="meses">Plazo 9 meses</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grafico">
+                        <div class="chart-container">
+                            <canvas  id="MyChart" >{{ chart }}</canvas>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -37,10 +58,12 @@
             <label for="btn-acordeon2">
                 Potencia tu capital
                 Fondos de Inversion Colectiva
-                CDT 
+                CDT
             </label>
             <div class="contenido-acordeon">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam numquam odio modi. Eligendi.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
             </div>
         </div>
 
@@ -50,31 +73,35 @@
                 Fondos de Pension Voluntaria
             </label>
             <div class="contenido-acordeon">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam numquam odio modi. Eligendi.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
             </div>
         </div>
 
         <div class="acordeon">
             <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
             <label for="btn-acordeon4">
-                Invierte con nosotros 
+                Invierte con nosotros
                 Protección Portafolio
             </label>
             <div class="contenido-acordeon">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam numquam odio modi. Eligendi.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
             </div>
         </div>
     </div>
-<aside>
-    <div class="wrapper">
-       <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="money"><a href="#">Money</a></li>
-            <li class="notification"><a href="#">Notificaciones</a></li>
-        </ul>
-       </div>
-    </div>
-</aside>
+    <aside>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="money"><a href="#">Money</a></li>
+                    <li class="notification"><a href="#">Notificaciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
 </section>

@@ -157,3 +157,10 @@ h3 {
 .sidebar {
     margin-left: -40px;
 }
+
+.plazo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
