@@ -10,10 +10,15 @@
             </label>
             <div class="contenido-acordeon">
                 <h2 class="CDT">Beneficios de la inversion en CDT</h2>
-                <p class="info"> Protege tu capital con un retorno fijo</p>
-                <p class="info"> Sin comisiones ni 4x1000</p>
-                <p class="info"> Tasas atractivas para plazos de 3 a 24 meses</p>
 
+                <div class="imagen">
+                    <div>
+                        <p class="info"> Protege tu capital con un retorno fijo</p>
+                        <p class="info"> Sin comisiones ni 4x1000</p>
+                        <p class="info"> Tasas atractivas para plazos de 3 a 24 meses</p>
+                    </div>
+                    <img src="../../../assets/img/Toro.png" alt="">
+                </div>
                 <h3>Simula tu CDT y descubre cuánto puedes ganar</h3>
                 <input type="number" name="monto" id="monto" placeholder="$ Ingresar monto" />
 
@@ -42,14 +47,14 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="grafico">
                         <div class="chart-container">
-                            <canvas  id="MyChart" >{{ chart }}</canvas>
+                            <canvas id="MyChart">{{ chart }}</canvas>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
