@@ -16,13 +16,14 @@ section {
    }
 
 aside {
-    background-color: #5b78a7;
+    background-color: #00AEC7;
    position: relative;
+   
 
 }
 
    .wrapper .sidebar h2 {
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0px;
@@ -35,7 +36,7 @@ aside {
    }
 
    .wrapper .sidebar ul li a {
-    color: #bdb8d7;
+    color: black;
     display: block;
    }
 
@@ -47,7 +48,7 @@ aside {
     color: #fff;
 }
 
-contenedor-acordeon {
+.contenedor-acordeon {
     width: 100%;
     max-width: 1170px;
     margin: auto;
