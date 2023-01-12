@@ -1,8 +1,10 @@
+
+
 section {
     display: flex;
     flex-direction: row-reverse;
     width: 99.5%;
-    background-color: rgb(3, 3, 77);
+
     margin: -2%;
     margin-left: 2px;
    padding-left: 0%;
@@ -100,7 +102,7 @@ aside {
 .info{
     background-color: #d6f2f6;
     height: 30px;
-    width: 300px;
+    width: 350px;
     border-radius: 10px;
     justify-content: center;
     line-height: 30px;

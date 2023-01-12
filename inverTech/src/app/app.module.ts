@@ -15,8 +15,12 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { MainPageComponent } from './mainPage/main-page.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+<<<<<<< HEAD
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+=======
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+>>>>>>> 4db607eee060266e6e144420bb9c7814162d12da
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
