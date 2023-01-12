@@ -8,7 +8,6 @@
 body {
   display: flex;
   align-items: center;
-  background-color: #6ff9ff;
 /*   color: #244752; */
   color: #0095a8;
   font-family: 'Open Sans', sans-serif;
@@ -104,10 +103,15 @@ div.radio-control {
 }
 
 .justify-sb {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 textarea {
   width: 100%;
 }
 
+
+
+.container{
+  border: solid rgb(187, 184, 184) 2px;
+}
