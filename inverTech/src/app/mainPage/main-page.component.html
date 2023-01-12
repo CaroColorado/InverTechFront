@@ -1,21 +1,12 @@
-<nav id="nav">
-    <div>
-        <img src="../../assets/img/logo.png" alt="Logo" class="logoinver">
-
-    </div>
-    <div>
-        <button id="btnregistro" routerLink="register">Regístrate</button>
-        <button id="btningreso" routerLink="login">Ingresa</button>
-    </div>
-</nav>
+<app-header></app-header>
 <section class="seccion1">
 
     <div id="uptext">
         <p> Aprende y lleva tus inversiones </p>
         <p> a lo mas alto</p>
-        <button id="btnstart">Start now</button>
+        <button id="btnstart" routerLink="/register">Start now</button>
     </div>
-    <img src="../../assets/img/up.png" alt="imagen" id="upimg">
+    <img src="../../assets/img/up.png" alt="imagen" id="upimg" routerLink="/mainPage">
 </section>
 <section class="seccion2">
     <p>Deseas mas informacion?</p>
@@ -36,10 +27,4 @@
     </form>
     <button id="btnenviar">Enviar</button>
 </section>
-<footer>
-    <div id="logos">
-        <img src="../../assets/img/logo.png" alt="logo inver" class="logoinvert">
-        <img src="../../assets/images/logoprote.jpg" alt="logo prote" id="logoprote">
-    </div>
-    <p>COPYRIGHT © 2023 INVERTECH</p>
-</footer>
+<app-footer></app-footer>

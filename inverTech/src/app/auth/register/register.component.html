@@ -1,3 +1,4 @@
+<app-header></app-header>
 <form class="formulario">
   <h1>Registrate</h1>
   <div class="contenedor">
@@ -16,10 +17,10 @@
           <input type="password" placeholder="Contraseña">
       </div>
 
-      <input value="Registrate" class="button">
+      <input type="button" value="Registrate" class="button" routerLink="/profiling">
 
       <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
-      <p>¿ya tienes cuenta? <a class="link" routerLink="login">Inicia sesión</a></p>
+      <p>¿ya tienes cuenta? <a class="link" routerLink="/login">Inicia sesión</a></p>
   </div>
-
 </form>
+<app-footer></app-footer>

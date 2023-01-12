@@ -1,21 +1,23 @@
+<app-header></app-header>
 <form class="formulario">
-    <h1>Login</h1>
+    <h1>Ingresar</h1>
     <div class="contenedor">
 
         <div class="input-contenedor ">
             <i class="fa-solid fa-envelope icon "></i>
-            <input type="text" placeholder="Correo Electronico">
+            <input type="text" placeholder="Correo Electronico" id="email" required>
         </div>
 
         <div class="input-contenedor">
             <i class="fa-solid fa-key icon"></i>
-            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña" required>
         </div>
 
-        <input type="submit" value="Login" class="button">
+        <input type="submit" value="Ingresar" class="button" routerLink="/learning" >
 
         <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
-        <p>¿No tienes cuenta? <a class="link" >Registrate</a></p>
+        <p>¿No tienes cuenta? <a class="link" routerLink="/register">Registrate</a></p>
     </div>
-
 </form>
+
+<app-footer></app-footer>
