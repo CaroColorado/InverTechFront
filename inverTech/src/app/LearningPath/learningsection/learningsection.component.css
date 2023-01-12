@@ -1,8 +1,10 @@
+
+
 section {
     display: flex;
     flex-direction: row-reverse;
     width: 99.5%;
-    background-color: rgb(3, 3, 77);
+
     margin: -2%;
     margin-left: 2px;
    padding-left: 0%;

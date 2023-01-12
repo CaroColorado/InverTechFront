@@ -1,7 +1,7 @@
 header {
     display: flex;
-    height: 20px;
-    justify-content: flex-end;
+    height: max-content;
+    justify-content: space-between;
     align-items: baseline;
     margin-right: 20px;
 }
@@ -32,7 +32,7 @@ h1 {
     height: 30px;
     max-width: 100%;
     padding: 0;
-    margin: -20px auto 0 auto;
+    margin: 0px auto 0 auto;
   }
 
 .progressbar {
@@ -44,6 +44,7 @@ h1 {
     overflow: hidden;
     margin-right: 20px;
     margin-left: 10px;
+    flex-grow: 1;
 }
 
 .progressbar::before {
@@ -61,4 +62,15 @@ h1 {
     to {
         transform: translateX(var(--fill-size));
     }
+}
+.logo{
+    width: 5%;
+    margin-left: 10px;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
