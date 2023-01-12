@@ -31,7 +31,7 @@
 }
 
 .logoinver{
-    width: 130px;
+    width: 110px;
 }
 
 .seccion1{
@@ -95,4 +95,9 @@ footer{
 #logos{
     display: flex;
     align-items: center;
+}
+
+.logoinvert {
+    width: 80px;
+    margin-bottom: 10px;
 }
