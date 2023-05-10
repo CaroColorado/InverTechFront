@@ -1,25 +1,119 @@
-
 <section>
 
-    <nav id="menu">
-        <ul>
-         <li class="pri"><a href="#">Section 1</a></li>
-         <li class="seg"><a href="#">Section 2</a></li>
-         <li class="ter"><a href="#">Section 3</a></li>
-         <li class="cua"><a href="#">Section 4</a></li>
-         <li class="qui"><a href="#">Section 5</a></li>
-        </ul>
-        </nav>
-<aside>
-    <div class="wrapper">
-       <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="money"><a href="#">Money</a></li>
-            <li class="notification"><a href="#">Notificaciones</a></li>
-        </ul>
-       </div>
+    <div class="contenedor-acordeon">
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+            <label for="btn-acordeon1">
+                Tasas fijas de hasta 16.00%
+                CDT
+            </label>
+            <div class="contenido-acordeon">
+                <h2 class="CDT">Beneficios de la inversion en CDT</h2>
+
+                <div class="imagen">
+                
+                <div>
+                
+                <p class="info"> Protege tu capital con un retorno fijo</p>
+                <p class="info"> Sin comisiones ni 4x1000</p>
+                <p class="info"> Tasas atractivas para plazos de 3 a 24 meses</p>
+                     </div>
+                
+                 <div class="contenedor">
+                        <img src="../../../assets/img/Toro.png" />
+                        <div class="centrado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, commodi. Ullam vitae consequuntur nam iusto libero consectetur aliquid.</div>
+                      </div>
+        
+                 </div>
+                <h3>Simula tu CDT y descubre cuánto puedes ganar</h3>
+                <input type="number" name="monto" id="monto" placeholder="$ Ingresar monto" />
+
+                <p class="explicacion">¡El CDT te da más que tu cuenta de ahorros! Con unas super tasas generas
+                    rendimientos positivos desde el primer día!</p>
+
+                <h5> Selecciona un plazo y conoce la proyección de tu CDT</h5>
+                <div class="plazo">
+                    <div class="sidebar">
+                        <ul>
+                            <li class="tasas">
+                                <p href="#">$128.748 </p>
+                                <p class="meses">Plazo 24 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$122.313 </p>
+                                <p class="meses">Plazo 18 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$115.360 </p>
+                                <p class="meses">Plazo 12 meses</p>
+                            </li>
+                            <li class="tasas">
+                                <p href="#">$110.748 </p>
+                                <p class="meses">Plazo 9 meses</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grafico">
+                        <div class="chart-container">
+                            <canvas id="MyChart">{{ chart }}</canvas>
+                        </div>
+                    </div>
+                </div>
+                <button id="botonEnd" routerLink="/feedback">Terminar sección</button>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+            <label for="btn-acordeon2">
+                Potencia tu capital
+                Fondos de Inversion Colectiva
+                CDT
+            </label>
+            <div class="contenido-acordeon">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+            <label for="btn-acordeon3">
+                Fondos de Pension Voluntaria
+            </label>
+            <div class="contenido-acordeon">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+            <label for="btn-acordeon4">
+                Invierte con nosotros
+                Protección Portafolio
+            </label>
+            <div class="contenido-acordeon">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
+                    officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
+                    numquam odio modi. Eligendi.</p>
+            </div>
+        </div>
     </div>
-</aside>
+    <aside>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="money"><a href="#">Money</a></li>
+                    <li class="notification"><a href="#">Notificaciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
 </section>

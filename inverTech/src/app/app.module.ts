@@ -13,6 +13,12 @@ import { LearningheaderComponent } from './LearningPath/learningheader/learningh
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { MainPageComponent } from './mainPage/main-page.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,12 +32,17 @@ import { MainPageComponent } from './mainPage/main-page.component';
     HeaderuserinfoComponent,
     MainuserinfoComponent,
     UserInfoComponent,
-    MainPageComponent
+    MainPageComponent,
+    LoginComponent,
+    RegisterComponent,
+    HeaderComponent,
+    FooterComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

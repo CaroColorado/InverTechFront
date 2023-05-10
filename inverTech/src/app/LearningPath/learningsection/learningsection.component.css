@@ -1,8 +1,10 @@
+
+
 section {
     display: flex;
     flex-direction: row-reverse;
     width: 99.5%;
-    background-color: rgb(3, 3, 77);
+
     margin: -2%;
     margin-left: 2px;
    padding-left: 0%;
@@ -10,72 +12,20 @@ section {
 
 }
 
-#menu {
-    width: 100%;
-    margin-right: 50px;
-    margin-left: -100px;
-}
-#menu ul {
-    list-style:none
-   }
-
-   #menu ul li {
-    border-radius: 10px;
-    height: 70px;
-    width: 90%;
-    margin-left: 80px;
-   }
-
-.pri{background-color: #4EC3E0;}
-.seg { background-color: #4EC3E0;}
-.ter {background-color: #4EC3E0;}
-.cua {background-color: #4EC3E0;}
-.qui{background-color: #4EC3E0;
-}  
-
-
-#menu ul a {
-    display:block;
-    color:white;
-    text-decoration:none;
-    font-weight:400;
-    font: size 20px;
-    padding:20px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin: 25px;
-    position: relative;
-   }
-
-   #menu ul li:hover {
-    background:#5b78a7;
-   }
-  
-
-#menu ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#eee;
-    padding:0;
-   }
-
-
    .wrapper {
     display: flex;
     position: relative;
    }
 
 aside {
-    background-color: #5b78a7;
+    background-color: #00AEC7;
    position: relative;
+   margin-right: 2px;
 
 }
 
    .wrapper .sidebar h2 {
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0px;
@@ -85,10 +35,11 @@ aside {
     padding: 15px;
     border-bottom: 1px solid rgb(0,0,0,0.05);
     border-top: 1px solid rgb(225,225,225,0.05);
+    list-style: none;
    }
 
    .wrapper .sidebar ul li a {
-    color: #bdb8d7;
+    color: black;
     display: block;
    }
 
@@ -98,4 +49,159 @@ aside {
 
 .wrapper .sidebar ul li:hover a {
     color: #fff;
+}
+
+.contenedor-acordeon {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.contenedor-acordeon h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.acordeon{
+    background-color: rgb(255, 255, 255);
+}
+
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #00AEC7;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+
+.acordeon label:hover{
+    background: #2e2e2e;
+}
+
+.acordeon .contenido-acordeon{
+    padding:0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: max-content;
+    padding: 15px 0px;
+}
+
+.btn-acordeon{
+    display: none;
+}
+
+.info{
+    background-color: #d6f2f6;
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    justify-content: center;
+    line-height: 30px;
+    margin-left: 10px ;
+    padding: 10px;
+    margin-bottom: -9px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+#monto {
+    border: #fff;
+    background-color: #eaf8fa;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom: solid #E3E829 5px;
+    width: 320px;
+
+}
+
+.explicacion {
+    background-color: #E3E829;
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+    margin-left: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: large;
+    margin-bottom: 40px;
+}
+
+.tasas {
+   border: solid #d6f2f6;
+   border-radius: 10px;
+   padding-left: 15px;
+   margin: 5px;
+   height: max-content;
+   width: 300px;
+   list-style: none;
+   
+}
+
+.meses {
+    color: rgb(180, 175, 175);
+    line-height: 2px;
+}
+
+.tasas:hover {
+    background: #d6f2f6;;
+}
+
+.sidebar {
+    margin-left: -40px;
+}
+
+.plazo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; opacity: 70%;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+img {
+    width: 30%;
+}
+
+.imagen {
+    display: flex;
+}
+
+#botonEnd{
+    background-color: #0033A0;
+    border: none;
+    color: #fff;
+    padding: 5px;
 }

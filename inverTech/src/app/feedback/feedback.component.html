@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feedback.component.css">
+  <title>Feedback</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1 id="title">¡Felicidades!</h1>
+      <img id="ballenita" src="../../assets/img/ballena.png" alt="Inver, la mascota de InverTech" style="width: 100px;">
+      <h3> Has llegado al final del módulo</h3>
+      <p id="description">Ayúdanos a mejorar tu experiencia respondiendo a las siguientes preguntas, siendo 1 "muy en
+        desacuerdo" y 5 "muy de acuerdo".</p>
+    </div>
+    <form id="survey-form">
+      <div class="row m-t-20">
+        <p class="label">El contenido del módulo fue útil e interesante</p>
+      </div>
+      <div class="small-row justify-sb">
+        <div class="radio-control">
+          <input type="radio" id="recommend-1" name="util" value=1>
+          <label for="recommend-1">1</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-2" name="util" value=2>
+          <label for="recommend-2">2</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-3" name="util" value=3>
+          <label for="recommend-3">3</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-4" name="util" value=4>
+          <label for="recommend-4">4</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-5" name="util" value=5>
+          <label for="recommend-5">5</label>
+        </div>
+      </div>
+
+      <div class="row m-t-20">
+        <p class="label">La información presentada fue clara y entendible</p>
+      </div>
+      <div class="small-row justify-sb">
+        <div class="radio-control">
+          <input type="radio" id="recommend-1" name="claro" value=1>
+          <label for="recommend-1">1</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-2" name="claro" value=2>
+          <label for="recommend-2">2</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-3" name="claro" value=3>
+          <label for="recommend-3">3</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-4" name="claro" value=4>
+          <label for="recommend-4">4</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-5" name="claro" value=5>
+          <label for="recommend-5">5</label>
+        </div>
+      </div>
+
+      <div class="row m-t-20">
+        <p class="label">La plataforma funcionó sin errores ni retrasos</p>
+      </div>
+      <div class="small-row justify-sb">
+        <div class="radio-control">
+          <input type="radio" id="recommend-1" name="fluido" value=1>
+          <label for="recommend-1">1</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-2" name="fluido" value=2>
+          <label for="recommend-2">2</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-3" name="fluido" value=3>
+          <label for="recommend-3">3</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-4" name="fluido" value=4>
+          <label for="recommend-4">4</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="recommend-5" name="fluido" value=5>
+          <label for="recommend-5">5</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="submit" id="submit" (click)="goToLearning()">Enviar</button>
+        
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>

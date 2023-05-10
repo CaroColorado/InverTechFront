@@ -1,0 +1,47 @@
+#nav{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btnregistro, #btningreso, #btnenviar{
+    color: #0033A0;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: var( --font-size-lg);
+    border-radius: 3px;
+}
+#btningreso, #btnenviar{
+    background-color: #E3E829;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#btnregistro:active{
+    background-color: #E3E829;
+}
+#btningreso:active, #btnenviar:active{
+    background-color: #ffffff;
+}
+
+.logoinver{
+    width: 110px;
+}
+
+header{
+    border-bottom: solid #0033A0 1px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
