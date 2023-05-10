@@ -198,3 +198,10 @@ img {
 .imagen {
     display: flex;
 }
+
+#botonEnd{
+    background-color: #0033A0;
+    border: none;
+    color: #fff;
+    padding: 5px;
+}

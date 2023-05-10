@@ -47,6 +47,11 @@ input[type="text"],input[type="password"]{
   border-radius: 5px;
   cursor: pointer;
 }
+.button:disabled{
+  background-color: #999;
+  color: aliceblue;
+  cursor: not-allowed;
+}
 .button:hover{
   background: cadetblue;
 }
@@ -69,4 +74,8 @@ p{
       margin-top: 100px;
       border-radius: 2%;
   }
+}
+
+span{
+  color: red;
 }

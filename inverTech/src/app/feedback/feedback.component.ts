@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-feedback',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent {
+  constructor(private router: Router){
 
+  }
+  goToLearning(){
+    this.router.navigate(['/learning']);
+  }
 }

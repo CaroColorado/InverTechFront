@@ -1,7 +1,6 @@
 <header>
 
     <img class="logo" src="../../../assets/img/logo.png" alt="">
-
     <div class="right">
         <div><img class="img1" src="../../../assets/img/corazonbueno.png" alt="rachas"> </div>
 
@@ -10,6 +9,7 @@
         </div>
 
         <div><img class="img2" src="../../../assets/img/profile.png" alt="" [routerLink]="['/userinfo']"></div>
+        <span>{{loginService.currentUser.name}}</span>
     </div>
 
 

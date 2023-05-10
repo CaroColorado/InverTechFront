@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,16 +9,34 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private router: Router){
+  error:string = ""
+  profileForm = this.fb.group({
+    nombre: [''],
+    email: [''],
+    password: ['']
+  });
+
+  constructor(private router: Router, private fb: FormBuilder, private loginService: LoginService){
 
   }
-  
-  correo: any = "";
-  contraseña: string = "";
 
   goToLearning() {
-    this.correo = document.getElementById("email");
+    //validar usuario
+    const isUserValid = this.loginService.validateUser(this.profileForm);
+    if(isUserValid){
+      //redireccionar a learning
+      this.router.navigate(['/learning']);
+      this.error = "";
+      console.log(":)");
+    }else{
+      //mostrar mensaje error
+      this.error = "El usuario no esta registrado"
+      //borrar formulario
+      console.log(":(");
+      
+    }
     //this.correo = document.getElementById("email");
-    console.log(this.correo)
+    console.log(this.profileForm.get('email')?.value);
   }
+
 }

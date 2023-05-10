@@ -1,23 +1,24 @@
 <app-header></app-header>
-<form class="formulario">
+<form class="formulario" [formGroup]="profileForm" (ngSubmit)="goToProfiling()">
   <h1>Registrate</h1>
   <div class="contenedor">
       <div class="input-contenedor">
           <i class="fa-solid fa-person icon"></i>
-          <input type="text" placeholder="Nombre Completo">
+          <input type="text" placeholder="Nombre Completo" formControlName="name" required>
       </div>
 
       <div class="input-contenedor ">
           <i class="fa-solid fa-envelope icon "></i>
-          <input type="text" placeholder="Correo Electronico">
+          <input type="text" placeholder="Correo Electronico" formControlName="email" required>
       </div>
 
       <div class="input-contenedor">
           <i class="fa-solid fa-key icon"></i>
-          <input type="password" placeholder="Contraseña">
+          <input type="password" placeholder="Contraseña" formControlName="password" required>
       </div>
 
-      <input type="button" value="Registrate" class="button" routerLink="/profiling">
+      <span>{{error}}</span>
+      <input type="submit" value="Registrate" class="button" [disabled]="!profileForm.valid">
 
       <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
       <p>¿ya tienes cuenta? <a class="link" routerLink="/login">Inicia sesión</a></p>

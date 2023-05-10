@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-learningheader',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./learningheader.component.css','../../../assets/css/custom-properties.css']
 })
 export class LearningheaderComponent {
+    constructor(public loginService: LoginService){
+
+    }
 
 }

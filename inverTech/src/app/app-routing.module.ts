@@ -10,6 +10,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { LearningheaderComponent } from './LearningPath/learningheader/learningheader.component';
+import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
 
 const routes: Routes = [
   //aqui se indican las rutas
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'mainpage', component: MainPageComponent},
   { path: 'profiling', component: ProfilingComponent},
   { path: 'learning', component: LearningPathComponent },
+  { path: 'learningheader', component: LearningheaderComponent},
+  { path: 'learningsection', component: LearningsectionComponent},
   { path: 'userinfo', component: UserInfoComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
