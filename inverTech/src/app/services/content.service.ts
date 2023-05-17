@@ -12,7 +12,6 @@ export class ContentService {
 
   addContent(content : content){
     const contentRef = collection(this.firestore, 'content');
-
     return addDoc(contentRef, content);
   }
 
