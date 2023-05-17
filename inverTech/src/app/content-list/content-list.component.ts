@@ -17,8 +17,6 @@ export class ContentListComponent implements OnInit{
     this.contents = [];
   }
 
-
-
   ngOnInit(): void {
     this.contentService.getContent().subscribe(contents=>{
       this.contents = contents;

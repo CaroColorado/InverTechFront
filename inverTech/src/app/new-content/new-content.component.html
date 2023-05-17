@@ -2,10 +2,6 @@
 
 <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
     <div>
-      <label for="id">ID:</label>
-      <input type="text" id="id" name="id" [(ngModel)]="model.id" required>
-    </div>
-    <div>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" [(ngModel)]="model.nombre" required>
     </div>
