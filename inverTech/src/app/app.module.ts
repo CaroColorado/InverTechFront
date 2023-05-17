@@ -24,6 +24,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { NewContentComponent } from './new-content/new-content.component';
 import { FormsModule } from '@angular/forms';
+import { ContentListComponent } from './content-list/content-list.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    NewContentComponent
+    NewContentComponent,
+    ContentListComponent
   ],
   imports: [
     BrowserModule,

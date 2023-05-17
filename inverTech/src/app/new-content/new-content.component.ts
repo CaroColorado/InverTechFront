@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import content from 'src/interfaces/content.interface';
+import { ContentService } from '../services/content.service';
 
 @Component({
   selector: 'app-new-content',
@@ -14,15 +15,19 @@ export class NewContentComponent implements OnInit{
     contenido: ''
   };
 
-  constructor(){
-    
+  constructor(
+    private contentService: ContentService
+  ){
   }
+
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm) {
+  async onSubmit(form: NgForm) {
     if (form.valid) {
-      console.log(this.model); // Aquí puedes hacer lo que desees con los datos del formulario
+      console.log(this.model);
+      const response = await this.contentService.addContent(this.model);
+      console.log(response);
     }
   }
 }
