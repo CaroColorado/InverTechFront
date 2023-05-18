@@ -1,0 +1,16 @@
+<h1>Content List</h1>
+
+<div *ngIf="contents.length > 0">
+    <h2>Contenido:</h2>
+    <ul>
+      <li *ngFor="let item of contents">
+        <p>Nombre: {{ item.nombre }}</p>
+        <p>Contenido: {{ item.contenido }}</p>
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="contents.length === 0">
+    <p>No hay contenido disponible.</p>
+  </div>
+  
