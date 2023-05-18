@@ -21,7 +21,6 @@ export class ApiService {
 
   authenticate(form: AuthenticateI):Observable<ReponseI>{
     let dir = this.url + 'authenticate';
-    console.log("hola");
     return this.http.post<ReponseI>(dir, form);
   }
 }
