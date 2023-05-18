@@ -6,7 +6,7 @@ import {ApiService} from '../../services/api.service'
 import {RegisterI} from '../../../models/register.interface';
 import {AuthenticateI} from '../../../models/authenticate.interface';
 import {ReponseI} from '../../../models/reponse.interface';
-import {MatDialog} from '@angular/material/dialog'
+import {MatDialog} from '@angular/material/dialog';
 import { ModalComponent } from 'src/app/modal/modal.component';
 import { ErrorModalComponent } from 'src/app/modal/errormodal.component';
 
