@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LearningheaderComponent } from './LearningPath/learningheader/learningheader.component';
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
+import { ModalComponent } from './modal/modal.component';
 
 const routes: Routes = [
   //aqui se indican las rutas
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'feedback', component: FeedbackComponent},
   { path: 'header', component: HeaderComponent},
-  { path: 'footer', component: FooterComponent}
+  { path: 'footer', component: FooterComponent},
+  { path: 'modal', component: ModalComponent},
 ];
 
 @NgModule({
