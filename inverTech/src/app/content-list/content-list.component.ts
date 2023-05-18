@@ -23,4 +23,8 @@ export class ContentListComponent implements OnInit{
     })
   }
 
+  deleteContent(i:number){
+    this.contentService.deleteContent(this.contents[i]);
+  }
+
 }

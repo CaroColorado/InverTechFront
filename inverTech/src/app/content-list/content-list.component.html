@@ -3,9 +3,11 @@
 <div *ngIf="contents.length > 0">
     <h2>Contenido:</h2>
     <ul>
-      <li *ngFor="let item of contents">
+      <li *ngFor="let item of contents; let i=index">
+        <p>id: {{ item.id }}</p>
         <p>Nombre: {{ item.nombre }}</p>
         <p>Contenido: {{ item.contenido }}</p>
+        <button (click)="deleteContent(i)">Borrar</button>
       </li>
     </ul>
   </div>

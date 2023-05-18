@@ -27,7 +27,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { ModalComponent } from './modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ErrorModalComponent } from './modal/errormodal.component';
+import { ErrorRegisterModalComponent } from './modal/errorregister-modal.component';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -35,6 +35,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { NewContentComponent } from './new-content/new-content.component';
 import { FormsModule } from '@angular/forms';
 import { ContentListComponent } from './content-list/content-list.component';
+import { ErrorLoginModalComponent } from './modal/errorlogin-modal.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { ContentListComponent } from './content-list/content-list.component';
     FooterComponent,
 
     ModalComponent,
-    ErrorModalComponent
+    ErrorRegisterModalComponent,
+    ErrorLoginModalComponent,
     //DialogElementsExampleDialog
 
 

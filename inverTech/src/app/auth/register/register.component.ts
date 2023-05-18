@@ -8,7 +8,7 @@ import {AuthenticateI} from '../../../models/authenticate.interface';
 import {ReponseI} from '../../../models/reponse.interface';
 import {MatDialog} from '@angular/material/dialog';
 import { ModalComponent } from 'src/app/modal/modal.component';
-import { ErrorModalComponent } from 'src/app/modal/errormodal.component';
+import { ErrorRegisterModalComponent } from 'src/app/modal/errorregister-modal.component';
 
 
 @Component({
@@ -75,7 +75,7 @@ export class RegisterComponent {
       console.log(data);
       
       if(data.message?.includes("Error")){
-        this.dialog.open(ErrorModalComponent);
+        this.dialog.open(ErrorRegisterModalComponent);
       }else{
         this.dialog.open(ModalComponent);
       }
