@@ -12,7 +12,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LearningheaderComponent } from './LearningPath/learningheader/learningheader.component';
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
+import { ModalComponent } from './modal/modal.component';
 import { NewContentComponent } from './new-content/new-content.component';
+
 
 const routes: Routes = [
   //aqui se indican las rutas
@@ -28,7 +30,9 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackComponent},
   { path: 'header', component: HeaderComponent},
   { path: 'footer', component: FooterComponent},
+  { path: 'modal', component: ModalComponent},
   { path: 'newContent', component: NewContentComponent}
+
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <app-header></app-header>
-<form class="formulario" [formGroup]="profileForm" (ngSubmit)="goToProfiling()">
+<form class="formulario" [formGroup]="profileForm" (ngSubmit)="onRegister()">
   <h1>Registrate</h1>
   <div class="contenedor">
       <div class="input-contenedor">
@@ -18,10 +18,14 @@
       </div>
 
       <span>{{error}}</span>
-      <input type="submit" value="Registrate" class="button" [disabled]="!profileForm.valid">
+      <input type="submit" value="Registrate" class="button" [disabled]="!profileForm.valid" >
+      
 
       <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
       <p>¿ya tienes cuenta? <a class="link" routerLink="/login">Inicia sesión</a></p>
+      <!--<button>hola</button>-->
+      
   </div>
 </form>
+<!--<button mat-button (click)="openDialog()">Launch dialog</button>-->
 <app-footer></app-footer>
