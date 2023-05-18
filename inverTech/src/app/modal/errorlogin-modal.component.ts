@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ErrorLoginModalComponent {
   title = 'Error';
-  content = 'Error en el registro, ya existe un usuario con este correo';
+  content = 'Error, contraseña incorrecta';
   action = 'Cerrar';
   
 
