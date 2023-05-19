@@ -1,6 +1,6 @@
 <section>
 
-    <div class="contenedor-acordeon">
+    <!--<div class="contenedor-acordeon">
 
         <div class="acordeon">
             <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
@@ -101,6 +101,18 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi facilis quibusdam qui
                     officiis hic, eveniet dolor alias enim nesciunt vitae excepturi commodi quaerat, accusantium aliquam
                     numquam odio modi. Eligendi.</p>
+            </div>
+        </div>
+    </div>-->
+    <div class="contenedor-acordeon">
+        <div class="acordeon" *ngFor="let content of contents; let i = index">
+            <input type="radio" name="acordeon" [id]="'btn-acordeon'+i" class="btn-acordeon">
+            <label [for]="'btn-acordeon'+i">
+                {{content.nombre}}
+            </label>
+            <div class="contenido-acordeon">
+                <p [innerHTML]="content.contenido"></p>
+                <button id="botonEnd" routerLink="/feedback">Terminar sección</button>
             </div>
         </div>
     </div>

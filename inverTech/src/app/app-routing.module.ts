@@ -16,6 +16,7 @@ import { ModalComponent } from './modal/modal.component';
 import { NewContentComponent } from './new-content/new-content.component';
 
 
+
 const routes: Routes = [
   //aqui se indican las rutas
   { path: '', component: MainPageComponent},
