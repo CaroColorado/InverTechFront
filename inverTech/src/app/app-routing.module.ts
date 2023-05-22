@@ -16,6 +16,7 @@ import { ModalComponent } from './modal/modal.component';
 import { NewContentComponent } from './new-content/new-content.component';
 import {AuthGuard} from '../app/guards/auth.guard'
 import { AdminGuard } from './guards/admin.guard';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent},
   { path: 'footer', component: FooterComponent},
   { path: 'modal', component: ModalComponent},
-  { path: 'newContent', component: NewContentComponent, canActivate: [AdminGuard]}
+  { path: 'newContent', component: NewContentComponent, canActivate: [AdminGuard]},
+  { path: 'paypal', component: PaypalComponent}
 
 ];
 

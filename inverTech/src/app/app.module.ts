@@ -37,6 +37,7 @@ import { FormsModule } from '@angular/forms';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ErrorLoginModalComponent } from './modal/errorlogin-modal.component';
 import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interc
 
 
     NewContentComponent,
-    ContentListComponent
+    ContentListComponent,
+    PaypalComponent
 
   ],
   imports: [
