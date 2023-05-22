@@ -1,20 +1,23 @@
-<a class="regresar" routerLink="/learning"> Regresar </a>
-<div id="cuerpo">
-  <h1> Agregar nuevo contenido</h1>
 
-  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
-      <div>
+<a class="regresar" routerLink="/learning"> Regresar </a>
+
+<h1>Agregar nuevo contenido</h1>
+
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" [(ngModel)]="model.nombre" required>
-      </div>
-      <div>
+    </div>
+    <div>
         <label for="contenido">Contenido:</label>
         <textarea id="contenido" name="contenido" [(ngModel)]="model.contenido" required></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-  </form>
-</div>
+    </div>
+    <div>
+        <label for="premium">Premium:</label>
+        <input type="checkbox" id="premium" name="premium" [(ngModel)]="model.isPremium">
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+
 
 <app-content-list></app-content-list>
-
-  

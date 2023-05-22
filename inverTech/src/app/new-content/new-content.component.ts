@@ -12,7 +12,8 @@ export class NewContentComponent implements OnInit{
   model: content = {
     id: '',
     nombre: '',
-    contenido: ''
+    contenido: '',
+    isPremium: false
   };
 
   constructor(
