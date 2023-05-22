@@ -38,4 +38,10 @@ form {
     background-color: #45a049;
   }
 
-  
+  .regresar{
+    background-color: #fafd78;
+    width: 8%;
+    text-align: center;
+    border-radius: 10px;
+    height: 25px;
+}

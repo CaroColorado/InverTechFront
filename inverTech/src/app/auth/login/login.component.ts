@@ -7,7 +7,7 @@ import {ApiService} from '../../services/api.service'
 import { ReponseI } from 'src/models/reponse.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { ErrorLoginModalComponent } from 'src/app/modal/errorlogin-modal.component';
-
+import { userLoggedRequestI } from 'src/models/UserLoggedRequest.interface';
 
 
 @Component({
@@ -32,6 +32,10 @@ export class LoginComponent {
     access_token: '',
     refresh_token: '',
     message: ''
+  }
+
+  userLoggedRequest: userLoggedRequestI = {
+    email : ''
   }
 
   constructor(private router: Router, private fb: FormBuilder, private loginService: LoginService, private api: ApiService, public dialog: MatDialog){
@@ -62,11 +66,20 @@ export class LoginComponent {
     this.formAuth.password = this.profileForm.controls.password.value;
     this.api.authenticate(this.formAuth).subscribe(data =>{
       this.response = data;
-      console.log("data: " + data.access_token)
+      console.log("data: " + data.message)
       if(data.message?.includes("Error")){
+        this.api.isLoggedIn = false;
+        //localStorage.setItem('isLoggedIn', 'false');
         this.dialog.open(ErrorLoginModalComponent);
       }else{
-        this.router.navigate(['/learning']);
+        console.log("logueado");
+        localStorage.setItem('access_token', this.response.access_token+"");
+        localStorage.setItem('refresh_token', this.response.refresh_token+"");
+        //localStorage.setItem('isLoggedIn', 'true');
+        this.api.isLoggedIn = true;
+        this.userLoggedRequest.email = this.formAuth.email;
+        localStorage.setItem('email', this.formAuth.email+"");
+        this.router.navigate(['/learning']); 
       }
     });
   }

@@ -15,6 +15,7 @@ export class LearningsectionComponent implements OnInit {
     this.contents = [];
   }
   ngOnInit() {
+    
   }
   ngAfterViewInit(){
     this.contentService.getContent().subscribe(contents=>{

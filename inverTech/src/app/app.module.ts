@@ -20,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -36,6 +36,7 @@ import { NewContentComponent } from './new-content/new-content.component';
 import { FormsModule } from '@angular/forms';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ErrorLoginModalComponent } from './modal/errorlogin-modal.component';
+import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';
 
 
 @NgModule({
@@ -82,7 +83,11 @@ import { ErrorLoginModalComponent } from './modal/errorlogin-modal.component';
     provideFirestore(() => getFirestore())
 
   ],
-  providers: [],
+  providers: [{
+    provide : HTTP_INTERCEPTORS,
+    useClass: JwtInterceptorInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
