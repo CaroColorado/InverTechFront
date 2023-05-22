@@ -14,6 +14,10 @@ import { LearningheaderComponent } from './LearningPath/learningheader/learningh
 import { LearningsectionComponent } from './LearningPath/learningsection/learningsection.component';
 import { ModalComponent } from './modal/modal.component';
 import { NewContentComponent } from './new-content/new-content.component';
+import {AuthGuard} from '../app/guards/auth.guard'
+import { AdminGuard } from './guards/admin.guard';
+import { PaypalComponent } from './paypal/paypal.component';
+
 
 
 const routes: Routes = [
@@ -21,7 +25,7 @@ const routes: Routes = [
   { path: '', component: MainPageComponent},
   { path: 'mainpage', component: MainPageComponent},
   { path: 'profiling', component: ProfilingComponent},
-  { path: 'learning', component: LearningPathComponent },
+  { path: 'learning', component: LearningPathComponent, canActivate: [AuthGuard]},
   { path: 'learningheader', component: LearningheaderComponent},
   { path: 'learningsection', component: LearningsectionComponent},
   { path: 'userinfo', component: UserInfoComponent},
@@ -31,7 +35,8 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent},
   { path: 'footer', component: FooterComponent},
   { path: 'modal', component: ModalComponent},
-  { path: 'newContent', component: NewContentComponent}
+  { path: 'newContent', component: NewContentComponent, canActivate: [AdminGuard]},
+  { path: 'paypal', component: PaypalComponent}
 
 ];
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
+import { ContentService } from 'src/app/services/content.service';
+import content from 'src/interfaces/content.interface';
 
 @Component({
   selector: 'app-learningsection',
@@ -7,36 +9,18 @@ import Chart from 'chart.js/auto';
   styleUrls: ['./learningsection.component.css']
 })
 export class LearningsectionComponent implements OnInit {
-  public chart: any;
+  contents : content[];
 
-  constructor() { }
+  constructor(private contentService : ContentService) { 
+    this.contents = [];
+  }
   ngOnInit() {
-    this.createChart();
+    
+  }
+  ngAfterViewInit(){
+    this.contentService.getContent().subscribe(contents=>{
+      this.contents = contents;
+    })
   }
 
-  showGrafic() {
-    console.log("Hola")
-  }
-
-  createChart() {
-    this.chart = new Chart("MyChart", {
-      type: 'line', //this denotes tha type of chart
-      data: {// values on X-Axis
-        labels: ['9 meses', '12 meses', '18 meses', '24 meses'],
-        //pueden existir varios datasets
-        datasets: [
-          {
-            label: "Plazos",
-            data: ['110748', '115360', '122313', '128748'],
-            backgroundColor: 'blue',
-            borderColor: 'red'
-          }
-        ]
-      },
-      options: {
-        aspectRatio: 1
-      }
-
-    });
-  }
 }
