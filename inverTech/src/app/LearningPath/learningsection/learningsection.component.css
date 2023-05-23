@@ -205,3 +205,15 @@ img {
     color: #fff;
     padding: 5px;
 }
+
+.premium{
+    -webkit-text-stroke: 1px #d6f2f6;
+}
+
+.label-acordeon{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-premium{
+    background-color: rgb(248, 252, 30);
+}

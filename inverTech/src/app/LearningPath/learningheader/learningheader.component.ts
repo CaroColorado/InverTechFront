@@ -32,7 +32,8 @@ export class LearningheaderComponent {
       this.api.currentUser = {
         firstname : '',
         email : '',
-        role : ''
+        role : '',
+        premium: false
       }
       console.log("Current user2: " + this.api.currentUser.firstname + ", " + this.api.currentUser.email + ", " + this.api.currentUser.role);
       this.router.navigate(['/login']);

@@ -7,6 +7,7 @@
         <p>id: {{ item.id }}</p>
         <p>Nombre: {{ item.nombre }}</p>
         <p>Contenido: {{ item.contenido }}</p>
+        <p>Premium: {{item.isPremium}}</p>
         <button (click)="deleteContent(i)">Borrar</button>
       </li>
     </ul>

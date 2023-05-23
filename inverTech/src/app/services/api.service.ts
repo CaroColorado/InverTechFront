@@ -26,7 +26,8 @@ export class ApiService {
   currentUser : userLoggedResponseI = {
     firstname: '',
     email: '',
-    role: ''
+    role: '',
+    premium: false
   }
 
   constructor(private http:HttpClient) { }
@@ -44,6 +45,11 @@ export class ApiService {
 
   loggedUser(email: userLoggedRequestI):Observable<userLoggedResponseI>{
     let dir = 'http://localhost:8080/api/v1/user/getUserLoggedData';
+    return this.http.post<userLoggedResponseI>(dir, email);
+  }
+
+  setPremium(email: userLoggedRequestI):Observable<userLoggedResponseI>{
+    let dir = 'http://localhost:8080/api/v1/user/setUserPremium';
     return this.http.post<userLoggedResponseI>(dir, email);
   }
   

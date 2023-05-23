@@ -1,4 +1,10 @@
+
+
+
 <section>
+    <div>
+        <button class="btn-premium" routerLink="/paypal" *ngIf="!this.isPremium">Activar premium</button>
+    </div>
 
     <!--<div class="contenedor-acordeon">
 
@@ -104,14 +110,20 @@
             </div>
         </div>
     </div>-->
+    
     <div class="contenedor-acordeon">
         <div class="acordeon" *ngFor="let content of contents; let i = index">
-            <input type="radio" name="acordeon" [id]="'btn-acordeon'+i" class="btn-acordeon">
+            <input type="radio" name="acordeon" [id]="'btn-acordeon'+i" class="btn-acordeon" *ngIf="canAccess(content.isPremium)">
             <label [for]="'btn-acordeon'+i">
-                {{content.nombre}}
+                <div  class="label-acordeon">
+                    {{content.nombre}}
+                    <p *ngIf="content.isPremium" class="premium">Premium</p>
+                </div>
+                
             </label>
             <div class="contenido-acordeon">
                 <p [innerHTML]="content.contenido"></p>
+                <p>{{content.isPremium}}</p>
                 <button id="botonEnd" routerLink="/feedback">Terminar sección</button>
             </div>
         </div>
