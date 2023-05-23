@@ -67,6 +67,9 @@ h1 {
 .saludo{
     font-weight: bold;
 }
-#bienvenida{
-    
+
+.tituloPremium{
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 1px #858181;
 }
+

@@ -1,6 +1,7 @@
 <header>
         <img class="logo" src="../../../assets/img/logo.png" alt="">
     <div class="right">
+        <p *ngIf="this.isPremium" class="tituloPremium">Cuenta <br> Premium</p>
         <div><img class="img1" src="../../../assets/img/corazonbueno.png" alt="rachas"> </div>
 
         <div class="rangogPadre">
@@ -9,11 +10,25 @@
 
         <div><img class="img2" src="../../../assets/img/profile.png" alt="" [routerLink]="['/userinfo']"></div>
         <!--<span>{{loginService.currentUser.name}}</span>-->
-        <button (click)="salir()">salir</button>
-        <button routerLink="/newContent" *ngIf="this.role.includes('ADMIN')">ADMIN</button>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>density_small</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/userinfo">
+                <mat-icon>account_circle</mat-icon>
+                <span>{{name | titlecase}}</span>
+              </button>
+            <button mat-menu-item routerLink="/newContent" *ngIf="this.role.includes('ADMIN')">
+              <mat-icon>manage_accounts</mat-icon>
+              <span>Admin</span>
+            </button>
+            
+            <button mat-menu-item (click)="salir()" style="background-color: #C7C9C7;">
+              <mat-icon>logout</mat-icon>
+              <span >Salir</span>
+            </button>
+          </mat-menu>
     </div>
 </header>
-
-
 
 <div class="linea"></div>

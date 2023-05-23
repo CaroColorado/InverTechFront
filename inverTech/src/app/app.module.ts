@@ -23,10 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatButtonModule} from '@angular/material/button';
+
 import { ModalComponent } from './modal/modal.component';
-import { MatDialogModule } from '@angular/material/dialog';
 import { ErrorRegisterModalComponent } from './modal/errorregister-modal.component';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -38,6 +36,8 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { ErrorLoginModalComponent } from './modal/errorlogin-modal.component';
 import { JwtInterceptorInterceptor } from './interceptors/jwt-interceptor.interceptor';
 import { PaypalComponent } from './paypal/paypal.component';
+import {MaterialModule} from '../app/commons/material/material.module';
+
 
 
 @NgModule({
@@ -74,12 +74,11 @@ import { PaypalComponent } from './paypal/paypal.component';
     AppRoutingModule,
     ReactiveFormsModule,
 
+    
+
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatButtonModule,
-    MatDialogModule,
-
+    MaterialModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())

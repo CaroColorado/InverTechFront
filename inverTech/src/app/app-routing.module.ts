@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: '', component: MainPageComponent},
   { path: 'mainpage', component: MainPageComponent},
   { path: 'profiling', component: ProfilingComponent},
-  { path: 'learning', component: LearningPathComponent ,canActivate: [AuthGuard]},
+  { path: 'learning', component: LearningPathComponent , canActivate: [AuthGuard]},
   { path: 'learningheader', component: LearningheaderComponent},
   { path: 'learningsection', component: LearningsectionComponent},
   { path: 'userinfo', component: UserInfoComponent},

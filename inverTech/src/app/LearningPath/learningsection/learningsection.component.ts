@@ -13,6 +13,7 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./learningsection.component.css']
 })
 export class LearningsectionComponent implements OnInit {
+  
   userLoggedRequest: userLoggedRequestI = {
     email : ''
   }

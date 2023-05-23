@@ -2,9 +2,6 @@
 
 
 <section>
-    <div>
-        <button class="btn-premium" routerLink="/paypal" *ngIf="!this.isPremium">Activar premium</button>
-    </div>
 
     <!--<div class="contenedor-acordeon">
 
@@ -112,22 +109,26 @@
     </div>-->
     
     <div class="contenedor-acordeon">
-        <div class="acordeon" *ngFor="let content of contents; let i = index">
-            <input type="radio" name="acordeon" [id]="'btn-acordeon'+i" class="btn-acordeon" *ngIf="canAccess(content.isPremium)">
-            <label [for]="'btn-acordeon'+i">
-                <div  class="label-acordeon">
-                    {{content.nombre}}
-                    <p *ngIf="content.isPremium" class="premium">Premium</p>
+        <mat-accordion *ngFor="let content of contents; let i = index">
+            <mat-expansion-panel hideToggle style="margin: 5px;">
+              <mat-expansion-panel-header style="background-color: #00AEC7;" >
+                <mat-panel-title>{{content.nombre}}</mat-panel-title>
+                <mat-panel-description *ngIf="content.isPremium" class="premium">Premium </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div style="margin: 20px;">
+                <div id="contenido" *ngIf="canAccess(content.isPremium)" style="line-height: 50px;">
+                    {{content.contenido}}
+                    <button mat-button style="background-color: #0033A0; color: aliceblue;" routerLink="/feedback">Terminar sección</button>
                 </div>
-                
-            </label>
-            <div class="contenido-acordeon">
-                <p [innerHTML]="content.contenido"></p>
-                <p>{{content.isPremium}}</p>
-                <button id="botonEnd" routerLink="/feedback">Terminar sección</button>
-            </div>
-        </div>
+                <div *ngIf="canAccess(!content.isPremium)">
+                    <button mat-button class="btn-premium" routerLink="/paypal" *ngIf="!this.isPremium">Activar premium</button>
+                </div>
+              </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+        
     </div>
+    
     <aside>
         <div class="wrapper">
             <div class="sidebar">
@@ -140,4 +141,7 @@
             </div>
         </div>
     </aside>
+
+    
 </section>
+

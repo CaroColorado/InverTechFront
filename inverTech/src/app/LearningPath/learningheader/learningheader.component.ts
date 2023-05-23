@@ -11,9 +11,11 @@ import { userLoggedRequestI } from 'src/models/UserLoggedRequest.interface';
 })
 export class LearningheaderComponent {
     role: string = '';
+    name: string = '';
     userLoggedRequest: userLoggedRequestI = {
       email : ''
     }
+    isPremium: boolean = false;
     constructor(public loginService: LoginService, private router: Router, private api: ApiService){
       this.userLoggedRequest.email = localStorage.getItem('email');
       this.api.loggedUser(this.userLoggedRequest).subscribe(data =>{
@@ -21,6 +23,8 @@ export class LearningheaderComponent {
         this.api.currentUser.email = data.email;
         this.api.currentUser.firstname = data.firstname;
         this.api.currentUser.role = data.role;
+        this.isPremium = data.premium;
+        this.name = data.firstname + "";
         console.log("role...." + this.role);
       });
       

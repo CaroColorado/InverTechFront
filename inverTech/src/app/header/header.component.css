@@ -7,15 +7,15 @@
 }
 
 #btnregistro, #btningreso, #btnenviar{
-    color: #0033A0;
+    color: #1D428A;
     border: none;
-    background-color: transparent;
+    background-color: #B7C9D3;
     font-weight: bold;
     font-size: var( --font-size-lg);
     border-radius: 3px;
 }
 #btningreso, #btnenviar{
-    background-color: #E3E829;
+    background-color: #F9E547;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -36,7 +36,9 @@ header{
     padding-top: 5px;
 }
 
-
+button{
+    margin: 3px;
+}
 
 
 
