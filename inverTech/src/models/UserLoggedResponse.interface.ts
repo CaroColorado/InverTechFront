@@ -3,4 +3,5 @@ export interface userLoggedResponseI{
     email: String | null;
     role: string | null;
     premium: boolean;
+    firstTime: boolean;
 }

@@ -23,7 +23,8 @@ export class LearningsectionComponent implements OnInit {
     firstname : '',
     email : '',
     role : '',
-    premium : false
+    premium : false,
+    firstTime: false
   }
   isPremium: boolean = false;
 

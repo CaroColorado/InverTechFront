@@ -79,7 +79,13 @@ export class LoginComponent {
         this.api.isLoggedIn = true;
         this.userLoggedRequest.email = this.formAuth.email;
         localStorage.setItem('email', this.formAuth.email+"");
-        this.router.navigate(['/learning']); 
+        this.api.isFirstTime(this.userLoggedRequest).subscribe(isFirstTimeResponse => {
+          if(isFirstTimeResponse.firstTime){
+            this.router.navigate(['/profiling']);
+          }else{
+            this.router.navigate(['/learning']); 
+          }
+        });
       }
     });
   }

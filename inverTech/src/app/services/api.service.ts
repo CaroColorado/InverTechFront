@@ -6,6 +6,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs'
 import { userLoggedResponseI } from 'src/models/UserLoggedResponse.interface';
 import { userLoggedRequestI } from 'src/models/UserLoggedRequest.interface';
+import { IsFirstTimeResponse } from 'src/models/IsFirstTimeResponse.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,8 @@ export class ApiService {
     firstname: '',
     email: '',
     role: '',
-    premium: false
+    premium: false,
+    firstTime: false
   }
 
   constructor(private http:HttpClient) { }
@@ -51,6 +53,15 @@ export class ApiService {
   setPremium(email: userLoggedRequestI):Observable<userLoggedResponseI>{
     let dir = 'http://localhost:8080/api/v1/user/setUserPremium';
     return this.http.post<userLoggedResponseI>(dir, email);
+  }
+
+  isFirstTime(email: userLoggedRequestI):Observable<IsFirstTimeResponse>{
+    let dir = "http://localhost:8080/api/v1/user/isFirstTime"
+    return this.http.post<IsFirstTimeResponse>(dir, email);
+  }
+  setFirstTimeFalse(email: userLoggedRequestI):Observable<IsFirstTimeResponse>{
+    let dir = 'http://localhost:8080/api/v1/user/setFirstTimeFalse';
+    return this.http.post<IsFirstTimeResponse>(dir, email);
   }
   
 }
