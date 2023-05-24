@@ -3,13 +3,8 @@
 section {
     display: flex;
     flex-direction: row-reverse;
-    width: 99.5%;
-
-    margin: -2%;
-    margin-left: 2px;
-   padding-left: 0%;
-   
-
+    justify-content: center;
+    
 }
 
    .wrapper {
@@ -19,9 +14,7 @@ section {
 
 aside {
     background-color: #00AEC7;
-   position: relative;
-   margin-right: 2px;
-
+    border-radius: 5px;
 }
 
    .wrapper .sidebar h2 {
@@ -54,7 +47,6 @@ aside {
 .contenedor-acordeon {
     width: 100%;
     max-width: 1170px;
-    margin: auto;
 }
 
 .contenedor-acordeon h2 {
@@ -223,3 +215,4 @@ img {
     flex-direction: column;
     align-items: flex-start;
 }
+

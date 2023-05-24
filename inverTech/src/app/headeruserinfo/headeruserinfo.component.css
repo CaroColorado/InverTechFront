@@ -32,11 +32,8 @@
     text-align: center;
 }
 
-.regresar{
-    background-color: #fafd78;
-    width: 8%;
-    text-align: center;
-    border-radius: 10px;
-    height: 25px;
+#btnregresar{
+    background-color: #F1BE48;
+    margin: 10px;
 }
 

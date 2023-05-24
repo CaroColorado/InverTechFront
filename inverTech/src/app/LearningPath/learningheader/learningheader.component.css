@@ -1,10 +1,13 @@
 header {
     display: flex;
     flex-direction: row;
-    height: max-content;
     justify-content: space-between;
-    align-items: baseline;
-    margin-right: 20px;
+    margin: 10px;
+}
+.headerlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
 }
 
 h1 {
@@ -51,7 +54,7 @@ h1 {
 }
 
 .logo{
-    width: 5%;
+    width: 10%;
     margin-left: 10px;
 }
 
@@ -62,8 +65,7 @@ h1 {
     align-items: center;
 }
 
-.left{
-}
+
 .saludo{
     font-weight: bold;
 }
